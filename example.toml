@@ -1,0 +1,46 @@
+[questions.main]
+text = "Do you eat meat?"
+answers = [
+    { text = "Yes", target = "carnivore" },
+    { text = "No", target = "maybe_vegetarian" }
+]
+
+[questions.carnivore]
+text = "What kind of meat?"
+answers = [
+    { text = "Beef", target = "beef" },
+    { text = "Chicken", target = "chicken" },
+    { text = "Fish", target = "fish" }
+]
+
+[questions.maybe_vegetarian]
+text = "What about eggs?"
+answers = [
+    { text = "Yes", target = "vegetarian" },
+    { text = "No", target = "vegan" }
+]
+
+[questions.vegan]
+text = "You should have some grass"
+
+[questions.vegetarian]
+text = "You should have an omlete"
+
+[questions.beef]
+text = "You should have a burger"
+
+[questions.chicken]
+text = "You should have fried chicken"
+
+[questions.fish]
+text = "Raw or cooked?"
+answers = [
+    { text = "Raw", target = "sushi" },
+    { text = "Cooked", target = "salmon" }
+]
+
+[questions.sushi]
+text = "You should have some sushi"
+
+[questions.salmon]
+text = "You should have some grilled salmon"
